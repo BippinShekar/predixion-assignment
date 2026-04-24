@@ -112,6 +112,13 @@ def _call_claude(
             time.sleep(wait)
 
         except anthropic.APIStatusError as exc:
+            if exc.status_code == 429:
+                if attempt == 2:
+                    raise
+                wait = 60
+                log.warning("claude_rate_limited", attempt=attempt + 1, wait_s=wait)
+                time.sleep(wait)
+                continue
             log.error("claude_api_error", status=exc.status_code, error=str(exc))
             raise
 

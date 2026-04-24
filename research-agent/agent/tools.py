@@ -180,13 +180,14 @@ def _haiku_json_call(
     tracker: Any,
     step: str,
     timeout: float = 30.0,
+    max_tokens: int = 2048,
 ) -> dict:
     client = anthropic.Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY"))
     start = time.time()
 
     response = client.messages.create(
         model=HAIKU_MODEL,
-        max_tokens=1024,
+        max_tokens=max_tokens,
         messages=[{"role": "user", "content": prompt}],
         timeout=timeout,
     )
@@ -275,7 +276,7 @@ Respond with a JSON object using exactly these keys:
 Output valid JSON only."""
 
     try:
-        result = _haiku_json_call(prompt, tracker, step="structured_compare")
+        result = _haiku_json_call(prompt, tracker, step="structured_compare", max_tokens=4096)
         log.info(
             "structured_compare",
             items=items,
@@ -328,7 +329,7 @@ Output valid JSON only. Do not include any text outside the JSON object."""
             model="gpt-5.4-mini",
             messages=[{"role": "user", "content": prompt}],
             temperature=0,
-            max_tokens=512,
+            max_completion_tokens=512,
             response_format={"type": "json_object"},
             timeout=20.0,
         )
