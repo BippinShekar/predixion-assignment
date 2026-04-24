@@ -3,6 +3,10 @@ PRICING: dict[str, dict[str, float]] = {
         "input": 3.00,
         "output": 15.00,
     },
+    "claude-haiku-4-5-20251001": {
+        "input": 1.00,
+        "output": 5.00,
+    },
     "gpt-5.4-mini": {
         "input": 0.75,
         "output": 4.50,
