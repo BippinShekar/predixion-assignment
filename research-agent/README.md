@@ -233,7 +233,3 @@ The tradeoff is explicit in the code as a comment-free gap.
 - Human review queue for low-confidence answers
 - Streaming output so users see progress during long runs
 - Unit tests for tool executors and schema validation
-
-Sad Path --> A Failure in terms of research agent's capabilities.
-https://github.com/user-attachments/assets/20a2d31c-1746-4f0d-b021-1fdcfa308dbc
-
