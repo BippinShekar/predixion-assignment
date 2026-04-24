@@ -1,0 +1,108 @@
+{
+  "question": "Find 5 Indian B2B SaaS startups in HR tech and summarize their positioning.",
+  "answer": "Here are 5 prominent Indian B2B SaaS HR tech startups: Darwinbox (enterprise HCM platform for large global organizations), Keka HR (employee-centric all-in-one HRMS for SMEs and mid-market), Zimyo (engagement-first HR platform for startups and SMEs), HROne (inbox-style HR automation for companies moving away from manual processes), and Kredily (freemium HR/payroll platform democratizing compliance for small businesses). Each occupies a distinct segment of the market — from enterprise to SME to startup — with differentiated UX and business model strategies.",
+  "key_findings": [
+    {
+      "claim": "Darwinbox (founded 2015, Hyderabad) is a mobile-first enterprise HRMS serving 1,000+ customers across 130+ countries and was named Gartner Peer Insights Customer's Choice 2025 for Cloud HCM Suites.",
+      "source_urls": [
+        "https://procreator.design/blog/leading-saas-companies-in-india/",
+        "https://inc42.com/startups/hr-tech-startups-india-modernising-people-operations/"
+      ]
+    },
+    {
+      "claim": "Keka HR (founded 2015–16, Hyderabad) is positioned as an employee-centric HRMS for SMEs and mid-market businesses, used by 10,000+ companies across India and global markets.",
+      "source_urls": [
+        "https://procreator.design/blog/leading-saas-companies-in-india/",
+        "https://hrsoftwaremumbai.com/best-hrms-software-india/"
+      ]
+    },
+    {
+      "claim": "Zimyo (founded 2018, Delhi NCR) is an engagement-first HR SaaS with 40+ modules for SMEs, serving 2,000+ customers across 38 countries with $4.5M raised.",
+      "source_urls": [
+        "https://inc42.com/startups/hr-tech-startups-india-modernising-people-operations/",
+        "https://www.startuphrtoolkit.com/best-hr-software-in-india/"
+      ]
+    },
+    {
+      "claim": "HROne uses a unique inbox-style UI where every HR task appears as an actionable message, giving it the fastest user adoption rate; it has helped 2,000+ brands automate HR.",
+      "source_urls": [
+        "https://hrsoftwaremumbai.com/best-hrms-software-india/",
+        "https://www.opportunehr.com/hrms-blogs/top-6-best-hrms-software-in-india-2025-guide/"
+      ]
+    },
+    {
+      "claim": "Kredily is a freemium HR and payroll platform aimed at startups and small businesses, offering a free plan for unlimited employees, trusted by 1,000+ clients.",
+      "source_urls": [
+        "https://www.startuphrtoolkit.com/best-hr-software-in-india/",
+        "https://infowan.net/blogs/top-hr-software-in-india"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://procreator.design/blog/leading-saas-companies-in-india/",
+      "title": "Leading SaaS Companies in India to Watch in 2026",
+      "relevance_score": 0.95
+    },
+    {
+      "url": "https://inc42.com/startups/hr-tech-startups-india-modernising-people-operations/",
+      "title": "Meet The HR Tech Startups Modernising India's Back Offices – Inc42",
+      "relevance_score": 0.95
+    },
+    {
+      "url": "https://hrsoftwaremumbai.com/best-hrms-software-india/",
+      "title": "Best HRMS Software in India for 2026 – 12 Platforms Reviewed & Ranked",
+      "relevance_score": 0.9
+    },
+    {
+      "url": "https://www.startuphrtoolkit.com/best-hr-software-in-india/",
+      "title": "Best HR Software in India 2026: Top Picks for Your Business",
+      "relevance_score": 0.88
+    },
+    {
+      "url": "https://www.opportunehr.com/hrms-blogs/top-6-best-hrms-software-in-india-2025-guide/",
+      "title": "Top 6 Best HRMS Software in India [2025 Guide]",
+      "relevance_score": 0.85
+    },
+    {
+      "url": "https://infowan.net/blogs/top-hr-software-in-india",
+      "title": "Top 10 HR Software in India (2025) | Best HRMS Tools for Businesses",
+      "relevance_score": 0.82
+    },
+    {
+      "url": "https://hrsoftware.in/",
+      "title": "Best HR Software in India 2026 | Top HRMS for Startups, SMEs & Enterprises",
+      "relevance_score": 0.8
+    }
+  ],
+  "confidence": "high",
+  "limitations": [
+    "HROne's founding year and exact headquarters were not confirmed in sources",
+    "Kredily's founding year was not confirmed in sources",
+    "Traction figures are self-reported by the companies and sourced from third-party reviews rather than audited reports"
+  ],
+  "assumptions": [
+    "All 5 companies are classified as B2B SaaS HR tech startups or growth-stage companies",
+    "Traction and market data is as of 2024–2025"
+  ],
+  "next_steps": [
+    "Explore AI-native HR startups like uKnowva or PeopleStrong for further coverage",
+    "Check funding rounds on Crunchbase or Tracxn for updated financial details on HROne and Kredily",
+    "Analyze international expansion strategies of Darwinbox vs Keka for go-to-market comparison"
+  ],
+  "judge_verdict": {
+    "groundedness_score": 0.98,
+    "flagged_claims": [],
+    "passed": true,
+    "reasoning": "All listed startups and their positioning claims are directly supported by the provided source snippets, with only minor wording differences that do not change the substance."
+  }
+}
+
+====================================================
+TRACE  644b9a6a-099d-490c-9c36-4d8f7fafaefc
+Calls  6
+Tokens 84449 in / 5333 out
+Cost   $0.314968
+Time   129413ms
+====================================================
+

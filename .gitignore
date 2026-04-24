@@ -4,4 +4,4 @@ research-agent/**/__pycache__/
 research-agent/**/*.pyc
 research-agent/**/*.pyo
 research-agent/.env
-research-agent/eval/sample_outputs/*.json
+research-agent/eval/.run_cache/

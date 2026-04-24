@@ -16,7 +16,7 @@ def setup_logger() -> None:
         ],
         wrapper_class=structlog.BoundLogger,
         context_class=dict,
-        logger_factory=structlog.PrintLoggerFactory(),
+        logger_factory=structlog.PrintLoggerFactory(file=__import__("sys").stderr),
     )
 
 

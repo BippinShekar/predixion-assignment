@@ -1,0 +1,172 @@
+{
+  "question": "What are the pros and cons of using a multi-agent architecture for customer support automation?",
+  "answer": "Multi-agent architectures (MAS) for customer support offer compelling advantages — specialized agents, 24/7 availability, significant cost reductions, and dramatic resolution time improvements — but come with real challenges: high upfront implementation costs, latency between agents, quality/hallucination risks, security complexity, and organizational change management. Gartner predicts agentic AI will autonomously resolve 80% of common customer service issues by 2029 with a 30% reduction in operational costs, but organizations must carefully weigh the technical and human factors before deployment.",
+  "key_findings": [
+    {
+      "claim": "Gartner predicts agentic AI will autonomously resolve 80% of common customer service issues without human intervention by 2029, leading to a 30% reduction in operational costs.",
+      "source_urls": [
+        "https://www.gartner.com/en/newsroom/press-releases/2025-03-05-gartner-predicts-agentic-ai-will-autonomously-resolve-80-percent-of-common-customer-service-issues-without-human-intervention-by-20290"
+      ]
+    },
+    {
+      "claim": "Companies implementing MAS report cost reductions of up to 30% and productivity gains of around 35%, with specialized agents handling thousands of queries simultaneously.",
+      "source_urls": [
+        "https://www.talan.com/global/en/multi-agent-ai-systems-strategic-challenges-and-opportunities"
+      ]
+    },
+    {
+      "claim": "Businesses using AI in customer support have seen ticket deflection rates rise by up to 45% (McKinsey), and one telecom provider reduced average resolution time from 18 hours to under 2 minutes.",
+      "source_urls": [
+        "https://www.searchunify.com/resource-center/blog/how-to-scale-customer-service-with-ai-agents-a-2025-guide-for-cx-leaders/",
+        "https://www.classicinformatics.com/blog/ai-agents-customer-support-2025"
+      ]
+    },
+    {
+      "claim": "A multi-agent pipeline (Classifier → Router → Response Generator → Escalation Handler) can handle ~80% of common support scenarios automatically while correctly flagging the 20% needing human attention.",
+      "source_urls": [
+        "https://dev.to/exploredataaiml/building-an-intelligent-customer-support-system-with-multi-agent-architecture-236h"
+      ]
+    },
+    {
+      "claim": "MAS offer built-in resilience and fault tolerance through distributed intelligence, adapting in real time to changing conditions and ensuring business continuity.",
+      "source_urls": [
+        "https://www.xcubelabs.com/blog/multi-agent-system-top-industrial-applications-in-2025/"
+      ]
+    },
+    {
+      "claim": "Initial MAS implementation costs range from $500K to $5M depending on scope, with 6-18 months for full deployment and ongoing maintenance at 15-25% of initial cost annually.",
+      "source_urls": [
+        "https://terralogic.com/multi-agent-ai-systems-why-they-matter-2025/"
+      ]
+    },
+    {
+      "claim": "Communication latency between agents adds 50–200ms of additional processing time per inter-agent interaction, and latency is cited as the second biggest challenge by 20% of AI engineers surveyed.",
+      "source_urls": [
+        "https://terralogic.com/multi-agent-ai-systems-why-they-matter-2025/",
+        "https://www.langchain.com/state-of-agent-engineering"
+      ]
+    },
+    {
+      "claim": "MAS bring larger security attack surfaces, and a 20–30% security budget allocation is needed; compliance complexity in managing data governance across distributed agents is a key concern.",
+      "source_urls": [
+        "https://www.gartner.com/en/articles/multiagent-systems",
+        "https://terralogic.com/multi-agent-ai-systems-why-they-matter-2025/"
+      ]
+    },
+    {
+      "claim": "67% of companies report needing additional AI literacy training, and 23% of employees are initially resistant to AI collaboration when deploying MAS.",
+      "source_urls": [
+        "https://terralogic.com/multi-agent-ai-systems-why-they-matter-2025/"
+      ]
+    },
+    {
+      "claim": "60% of customers still prefer waiting in queues for human agents, and only 23% of companies currently run fully autonomous agent systems — highlighting the gap between pilot programs and production.",
+      "source_urls": [
+        "https://www.rezo.ai/our-blogs/agentic-ai-for-contact-center",
+        "https://www.mindstudio.ai/blog/future-of-ai-agents"
+      ]
+    },
+    {
+      "claim": "When agents are programmed to interact in complex ways, the system can exhibit unpredictable emergent behaviors requiring human intervention to ensure proper performance.",
+      "source_urls": [
+        "https://www.talan.com/global/en/multi-agent-ai-systems-strategic-challenges-and-opportunities"
+      ]
+    },
+    {
+      "claim": "The lack of universal standards and protocols hinders interoperability between different MAS implementations, complicating integration and increasing implementation complexity.",
+      "source_urls": [
+        "https://www.talan.com/global/en/multi-agent-ai-systems-strategic-challenges-and-opportunities"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2025-03-05-gartner-predicts-agentic-ai-will-autonomously-resolve-80-percent-of-common-customer-service-issues-without-human-intervention-by-20290",
+      "title": "Gartner Predicts Agentic AI Will Autonomously Resolve 80% of Common Customer Service Issues by 2029",
+      "relevance_score": 1.0
+    },
+    {
+      "url": "https://www.gartner.com/en/articles/multiagent-systems",
+      "title": "Multiagent Systems in Enterprise AI: Efficiency, Innovation and Vendor Advantage",
+      "relevance_score": 0.97
+    },
+    {
+      "url": "https://www.talan.com/global/en/multi-agent-ai-systems-strategic-challenges-and-opportunities",
+      "title": "Multi-Agent AI Systems: Strategic Challenges and Opportunities",
+      "relevance_score": 0.96
+    },
+    {
+      "url": "https://terralogic.com/multi-agent-ai-systems-why-they-matter-2025/",
+      "title": "Multi-Agent AI Systems in 2025: Key Insights, Use Cases & Future Trends",
+      "relevance_score": 0.95
+    },
+    {
+      "url": "https://www.langchain.com/state-of-agent-engineering",
+      "title": "State of Agent Engineering (LangChain Survey)",
+      "relevance_score": 0.93
+    },
+    {
+      "url": "https://dev.to/exploredataaiml/building-an-intelligent-customer-support-system-with-multi-agent-architecture-236h",
+      "title": "Building an Intelligent Customer Support System with Multi-Agent Architecture",
+      "relevance_score": 0.92
+    },
+    {
+      "url": "https://www.classicinformatics.com/blog/ai-agents-customer-support-2025",
+      "title": "AI Agents for Faster, Cost-Effective Customer Support (2025)",
+      "relevance_score": 0.91
+    },
+    {
+      "url": "https://www.searchunify.com/resource-center/blog/how-to-scale-customer-service-with-ai-agents-a-2025-guide-for-cx-leaders/",
+      "title": "How to Scale Customer Service with AI Agents in 2025",
+      "relevance_score": 0.9
+    },
+    {
+      "url": "https://www.rezo.ai/our-blogs/agentic-ai-for-contact-center",
+      "title": "Agentic AI for Contact Center: Next-Gen AI Agents for Customer Support",
+      "relevance_score": 0.89
+    },
+    {
+      "url": "https://www.xcubelabs.com/blog/multi-agent-system-top-industrial-applications-in-2025/",
+      "title": "Multi-Agent System: Top Industrial Applications in 2025",
+      "relevance_score": 0.88
+    },
+    {
+      "url": "https://www.mindstudio.ai/blog/future-of-ai-agents",
+      "title": "The Future of AI Agents: Trends and Predictions",
+      "relevance_score": 0.85
+    }
+  ],
+  "confidence": "high",
+  "limitations": [
+    "Cost and productivity figures (30% cost reduction, 35% productivity gains) are self-reported by companies and may not be universally reproducible.",
+    "The 80% autonomous resolution prediction by Gartner is a forecast for 2029, not a current reality.",
+    "Most statistics pertain to agentic AI broadly; figures specific only to multi-agent (vs. single-agent) customer support are less isolated.",
+    "Customer preference data (60% prefer human agents) reflects a transitional period and may shift as AI quality improves."
+  ],
+  "assumptions": [
+    "The question refers to LLM-powered multi-agent systems, not older rule-based MAS.",
+    "The analysis applies to mid-to-large enterprises with the infrastructure capacity to consider MAS deployment."
+  ],
+  "next_steps": [
+    "Conduct a pilot deployment with a single specialized agent before scaling to a full multi-agent architecture.",
+    "Evaluate latency trade-offs by benchmarking inter-agent communication overhead against your SLA requirements.",
+    "Assess security posture and budget for 20–30% additional security spend before committing to MAS.",
+    "Map existing tech stack integrations early to avoid the 6–18 month deployment delays commonly reported.",
+    "Establish human-in-the-loop escalation paths to address the 3–7% of decisions requiring intervention and maintain customer trust."
+  ],
+  "judge_verdict": {
+    "groundedness_score": 0.98,
+    "flagged_claims": [],
+    "passed": true,
+    "reasoning": "The draft answer is well supported by the provided sources, with the main benefits and drawbacks of multi-agent/customer-support automation directly backed by the cited evidence."
+  }
+}
+
+====================================================
+TRACE  60c5368f-8c44-449b-b092-b3c75e70f6e6
+Calls  6
+Tokens 81415 in / 5852 out
+Cost   $0.316063
+Time   96645ms
+====================================================
+

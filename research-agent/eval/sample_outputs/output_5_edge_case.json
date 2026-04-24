@@ -1,0 +1,77 @@
+{
+  "question": "What AI startups raised Series A funding in the last 48 hours?",
+  "answer": "Based on the latest funding news from April 23–24, 2026, three AI startups raised notable Series A rounds: Aaru ($80M, synthetic AI research), Runware ($50M, generative AI inference), and Ankar ($20M, AI-powered patent lifecycle). Additionally, Chinese AI startup DeepSeek is in talks for its first-ever funding round, with Tencent and Alibaba reported as potential participants.",
+  "key_findings": [
+    {
+      "claim": "Aaru raised an $80M Series A for its platform that uses simulated AI agents to predict consumer and political behavior, bringing total equity funding to $88M.",
+      "source_urls": [
+        "https://techstartups.com/2026/04/23/top-startup-and-tech-funding-news-april-23-2025/"
+      ]
+    },
+    {
+      "claim": "Runware raised a $50M Series A to scale its 'Sonic Inference Engine,' which optimizes generative AI performance via a single API aggregating hundreds of thousands of models. Total raised is now $66M.",
+      "source_urls": [
+        "https://www.crescendo.ai/news/latest-vc-investment-deals-in-ai-startups"
+      ]
+    },
+    {
+      "claim": "Ankar, founded by Palantir veterans, raised a $20M Series A to modernize the patent lifecycle using AI, analyzing over 150M patent applications and scientific papers. Total capital is now $24M.",
+      "source_urls": [
+        "https://www.crescendo.ai/news/latest-vc-investment-deals-in-ai-startups"
+      ]
+    },
+    {
+      "claim": "Tencent and Alibaba are in talks to participate in the first-ever funding round for Chinese AI startup DeepSeek, per a Bloomberg report published April 24, 2026.",
+      "source_urls": [
+        "https://www.indexbox.io/blog/tencent-and-alibaba-in-talks-to-invest-in-ai-startup-deepseek/"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://techstartups.com/2026/04/23/top-startup-and-tech-funding-news-april-23-2025/",
+      "title": "Top Startup and Tech Funding News – April 23, 2026",
+      "relevance_score": 1.0
+    },
+    {
+      "url": "https://www.crescendo.ai/news/latest-vc-investment-deals-in-ai-startups",
+      "title": "Latest AI Startup Funding News and VC Investment Deals - 2026",
+      "relevance_score": 0.95
+    },
+    {
+      "url": "https://www.indexbox.io/blog/tencent-and-alibaba-in-talks-to-invest-in-ai-startup-deepseek/",
+      "title": "Tencent and Alibaba in Talks to Invest in AI Startup DeepSeek",
+      "relevance_score": 0.9
+    }
+  ],
+  "confidence": "high",
+  "limitations": [
+    "Real-time funding databases (e.g., Crunchbase, PitchBook) may have additional Series A deals not yet publicly announced or indexed.",
+    "The DeepSeek round has not yet been formally confirmed or assigned a Series letter.",
+    "Some deals may have been announced but not yet covered by accessible news sources within the 48-hour window."
+  ],
+  "assumptions": [
+    "'Last 48 hours' is interpreted as April 23–24, 2026, based on today's date.",
+    "Only publicly reported and confirmed Series A rounds are included."
+  ],
+  "next_steps": [
+    "Monitor Crunchbase Daily or PitchBook for any additional Series A deals announced on April 24, 2026.",
+    "Track the DeepSeek funding round for confirmation of round stage and size.",
+    "Check TechCrunch and Bloomberg for any late-breaking Series A announcements."
+  ],
+  "judge_verdict": {
+    "groundedness_score": 1.0,
+    "flagged_claims": [],
+    "passed": true,
+    "reasoning": "All listed claims are directly supported by the provided source snippets, including the DeepSeek funding talks."
+  }
+}
+
+====================================================
+TRACE  71c075dc-74d0-404f-ac65-982bd88628d3
+Calls  3
+Tokens 84685 in / 2280 out
+Cost   $0.285394
+Time   66996ms
+====================================================
+

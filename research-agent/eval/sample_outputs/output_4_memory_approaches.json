@@ -1,0 +1,151 @@
+{
+  "question": "Compare different approaches to adding memory in an AI support agent.",
+  "answer": "There are six primary approaches to adding memory in an AI support agent — In-Context/Sliding Window, Vector Store (RAG), Summarization/Compression, Knowledge Graph, Fine-Tuning, and Hybrid/Layered — each with distinct trade-offs in continuity, latency, cost, scalability, and complexity. No single approach is universally optimal: production systems in 2026 increasingly converge on hybrid architectures that combine short-term context windows, RAG for knowledge breadth, and persistent memory stores for personalization and cross-session continuity.",
+  "key_findings": [
+    {
+      "claim": "In-context (sliding window) memory is zero-latency and zero-cost but volatile — lost at session end — and performance drops 39% on average from single-turn to multi-turn interactions across 15 LLMs tested by Microsoft Research and Salesforce.",
+      "source_urls": [
+        "https://atlan.com/know/llm-context-window-limitations/",
+        "https://thenewstack.io/memory-for-ai-agents-a-new-paradigm-of-context-engineering/"
+      ]
+    },
+    {
+      "claim": "Vector store (RAG-based) memory retrieves semantically relevant fragments from large corpora via cosine similarity; RAG retrieval accuracy runs 85–92% on well-governed data but drops to 45–60% with ungoverned data, and roughly 40% of RAG failures trace to data quality issues.",
+      "source_urls": [
+        "https://atlan.com/know/fine-tuning-vs-rag/",
+        "https://thenewstack.io/memory-for-ai-agents-a-new-paradigm-of-context-engineering/"
+      ]
+    },
+    {
+      "claim": "Naively appending every conversation turn into a vector database leads to retrieval noise, context dilution, and latency spikes over time — effective long-term memory requires sophisticated orchestration for consolidation, scoring, and forgetting.",
+      "source_urls": [
+        "https://www.analyticsvidhya.com/blog/2026/04/memory-systems-in-ai-agents/"
+      ]
+    },
+    {
+      "claim": "Summarization/compression memory periodically condenses transcripts into rolling summaries and entity-centric profiles, capping storage growth; enterprise-grade architectures rely on asynchronous background consolidation to avoid session latency overhead.",
+      "source_urls": [
+        "https://byaiteam.com/blog/2025/12/20/ai-agent-memory-architectures-retrieval-governance/",
+        "https://www.analyticsvidhya.com/blog/2026/04/memory-systems-in-ai-agents/"
+      ]
+    },
+    {
+      "claim": "Knowledge graph memory (e.g., Zep's Graphiti) organizes memories as nodes and relationships with temporal metadata (created_at, valid_at, expired_at), providing bi-temporal awareness and achieving strong accuracy improvements over full-context baselines on agent memory benchmarks.",
+      "source_urls": [
+        "https://atlan.com/know/ai-memory-system-vs-rag/",
+        "https://thenewstack.io/memory-for-ai-agents-a-new-paradigm-of-context-engineering/"
+      ]
+    },
+    {
+      "claim": "Fine-tuning (parametric memory) bakes knowledge into model weights, is best for style/tone adaptation, but crystallizes knowledge at a point in time — any update requires a full retraining cycle taking weeks, and produces outputs with no traceable source.",
+      "source_urls": [
+        "https://atlan.com/know/fine-tuning-vs-rag/",
+        "https://mem0.ai/blog/rag-vs-ai-memory"
+      ]
+    },
+    {
+      "claim": "Hybrid/layered memory combines hot memory (context window), warm memory (structured facts in fast databases for RAG), and cold archives (compressed logs for compliance), with a customer support copilot using working memory for current query, episodic memory for prior interactions, and semantic memory for entitlement verification.",
+      "source_urls": [
+        "https://www.analyticsvidhya.com/blog/2026/04/memory-systems-in-ai-agents/",
+        "https://byaiteam.com/blog/2025/12/20/ai-agent-memory-architectures-retrieval-governance/"
+      ]
+    },
+    {
+      "claim": "The field is converging on hybrid architectures combining factual long-term memory, working short-term context, and RAG for corpus lookup — most production agentic systems use both RAG (for knowledge breadth) and memory (for personalization and session continuity).",
+      "source_urls": [
+        "https://atlan.com/know/ai-memory-system-vs-rag/",
+        "https://mem0.ai/blog/rag-vs-ai-memory"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://thenewstack.io/memory-for-ai-agents-a-new-paradigm-of-context-engineering/",
+      "title": "Memory for AI Agents: A New Paradigm of Context Engineering – The New Stack",
+      "relevance_score": 0.95
+    },
+    {
+      "url": "https://www.analyticsvidhya.com/blog/2026/04/memory-systems-in-ai-agents/",
+      "title": "Architecture and Orchestration of Memory Systems in AI Agents – Analytics Vidhya",
+      "relevance_score": 0.95
+    },
+    {
+      "url": "https://atlan.com/know/ai-memory-system-vs-rag/",
+      "title": "AI Memory System vs RAG: Differences, Tradeoffs, and Use Cases – Atlan",
+      "relevance_score": 0.93
+    },
+    {
+      "url": "https://atlan.com/know/fine-tuning-vs-rag/",
+      "title": "Fine-Tuning vs RAG: Architecture, Tradeoffs, and a Decision Guide – Atlan",
+      "relevance_score": 0.9
+    },
+    {
+      "url": "https://byaiteam.com/blog/2025/12/20/ai-agent-memory-architectures-retrieval-governance/",
+      "title": "AI Agent Memory: Architectures, Retrieval, Governance – By AI Team",
+      "relevance_score": 0.9
+    },
+    {
+      "url": "https://mem0.ai/blog/rag-vs-ai-memory",
+      "title": "RAG vs. Memory: What AI Agent Developers Need to Know – Mem0",
+      "relevance_score": 0.88
+    },
+    {
+      "url": "https://atlan.com/know/llm-context-window-limitations/",
+      "title": "LLM Context Window Limitations in 2026 – Atlan",
+      "relevance_score": 0.85
+    },
+    {
+      "url": "https://redis.io/blog/rag-vs-large-context-window-ai-apps/",
+      "title": "RAG vs Large Context Window: Real Trade-offs for AI Apps – Redis",
+      "relevance_score": 0.82
+    },
+    {
+      "url": "https://arxiv.org/html/2503.12687v1",
+      "title": "AI Agents: Evolution, Architecture, and Real-World Applications – arXiv",
+      "relevance_score": 0.8
+    },
+    {
+      "url": "https://www.tribe.ai/applied-ai/beyond-the-bubble-how-context-aware-memory-systems-are-changing-the-game-in-2025",
+      "title": "Beyond the Bubble: How Context-Aware Memory Systems Are Changing the Game in 2025 – Tribe AI",
+      "relevance_score": 0.78
+    }
+  ],
+  "confidence": "high",
+  "limitations": [
+    "Latency benchmarks for knowledge graph retrieval were not directly found in sources.",
+    "Cost figures for hybrid architectures depend heavily on implementation choices and are not standardized.",
+    "Scalability data for summarization-only approaches in very large-scale deployments was limited.",
+    "Privacy/compliance implications of each approach were only partially covered."
+  ],
+  "assumptions": [
+    "'Support agent' refers to a conversational AI system handling multi-turn customer or employee support interactions.",
+    "Comparisons reflect the state of the field as of early-to-mid 2026.",
+    "Production suitability is assessed for enterprise-scale deployments, not just prototypes."
+  ],
+  "next_steps": [
+    "Evaluate memory frameworks head-to-head using benchmarks like MemGPT, Zep, A-Mem, and Mem0 (as in the 'Hindsight is 20/20' arXiv study).",
+    "Assess data governance readiness before selecting an approach — ungoverned data degrades all retrieval-based methods.",
+    "Prototype a hybrid architecture (hot/warm/cold tiering) and measure latency and accuracy against your specific support query distribution.",
+    "Consider privacy and compliance requirements (e.g., GDPR right-to-erasure) when choosing between vector stores, knowledge graphs, and parametric approaches."
+  ],
+  "judge_verdict": {
+    "groundedness_score": 0.82,
+    "flagged_claims": [
+      "In-context memory is volatile, lost at session end, and has zero retrieval latency",
+      "Vector store memory retrieves by cosine similarity and adds 50-200ms per retrieval",
+      "Summarization approach uses rolling summaries and async consolidation to cap storage growth",
+      "Most production agentic systems in 2026 use both RAG and memory (hybrid approach)"
+    ],
+    "passed": true,
+    "reasoning": "Most of the draft is supported by the sources, including the multi-turn performance drop, RAG accuracy ranges, fine-tuning trade-offs, bi-temporal knowledge graphs, and hybrid convergence, but a few specific latency and implementation details are not directly evidenced."
+  }
+}
+
+====================================================
+TRACE  250135d2-1d5d-426f-ae76-47fde078058a
+Calls  7
+Tokens 125701 in / 7672 out
+Cost   $0.462417
+Time   208798ms
+====================================================
+

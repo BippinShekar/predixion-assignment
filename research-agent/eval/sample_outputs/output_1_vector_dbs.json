@@ -1,0 +1,125 @@
+{
+  "question": "Compare the top 3 open-source vector databases for a startup building RAG products.",
+  "answer": "The top 3 open-source vector databases for RAG startups in 2025 are **Qdrant** (best for filtered search & cost efficiency), **Weaviate** (best for hybrid search & built-in embeddings), and **Milvus** (best for billion-scale deployments). All three are free to self-host, integrate with LangChain/LlamaIndex/Haystack, and offer managed cloud options — but they differ sharply in performance profile, operational complexity, and ideal startup stage.",
+  "key_findings": [
+    {
+      "claim": "Qdrant (Rust, Apache 2.0): Its ACORN algorithm integrates filtering directly into HNSW graph traversal, keeping filtered queries fast even when 99% of candidates are eliminated. It leads on raw performance (~2ms p99 latency, ~12,000 QPS) and runs on as little as a 4GB instance with millions of vectors using aggressive quantization. Qdrant Cloud starts at $25/mo with a free 1GB tier; ~$100–250/mo for 10M vectors — the most cost-efficient managed option.",
+      "source_urls": [
+        "https://blog.elest.io/qdrant-vs-weaviate-vs-milvus-which-vector-database-for-your-rag-pipeline/",
+        "https://tensorblue.com/blog/vector-database-comparison-pinecone-weaviate-qdrant-milvus-2025",
+        "https://digitaloneagency.com.au/best-vector-database-for-rag-in-2025-pinecone-vs-weaviate-vs-qdrant-vs-milvus-vs-chroma/"
+      ]
+    },
+    {
+      "claim": "Weaviate (Go, BSD-3): Ships with built-in vectorizers for OpenAI, Cohere, and HuggingFace, eliminating the need for a separate embedding pipeline. Its hybrid search merges HNSW vector similarity with BM25 keyword scoring in one query. Scales efficiently below 50M vectors but becomes memory-hungry above 100M. Managed cloud starts at ~$25/mo after a 14-day trial; ~$150–300/mo for 10M vectors.",
+      "source_urls": [
+        "https://blog.elest.io/qdrant-vs-weaviate-vs-milvus-which-vector-database-for-your-rag-pipeline/",
+        "https://neurlcreators.substack.com/p/top-5-vector-databases-2025",
+        "https://www.firecrawl.dev/blog/best-vector-databases",
+        "https://tensorblue.com/blog/vector-database-comparison-pinecone-weaviate-qdrant-milvus-2025"
+      ]
+    },
+    {
+      "claim": "Milvus (Go/C++, Apache 2.0): Fully disaggregated architecture separates compute and storage for independent scaling of reads, writes, and indexing — proven at billions of vectors with GPU acceleration. Largest open-source community with 35,000+ GitHub stars. Trade-off is operational complexity: self-hosting requires etcd and MinIO, and distributed mode is Kubernetes-native. Zilliz Cloud (managed) runs ~$150–350/mo for 10M vectors.",
+      "source_urls": [
+        "https://blog.elest.io/qdrant-vs-weaviate-vs-milvus-which-vector-database-for-your-rag-pipeline/",
+        "https://tensorblue.com/blog/vector-database-comparison-pinecone-weaviate-qdrant-milvus-2025",
+        "https://www.firecrawl.dev/blog/best-vector-databases",
+        "https://redis.io/blog/best-open-source-vector-databases-comparison/"
+      ]
+    },
+    {
+      "claim": "All three have dedicated LangChain integrations (QdrantVectorStore, Weaviate vector store, Milvus wrapper) and work with LlamaIndex and Haystack for building RAG pipelines.",
+      "source_urls": [
+        "https://www.ai-infra-link.com/comparing-open-source-vector-databases-for-rag-pipelines-a-comprehensive-guide-for-2025/"
+      ]
+    },
+    {
+      "claim": "For startups without large engineering teams, Qdrant and Weaviate offer better out-of-the-box simplicity; Milvus is reserved for teams with data engineering muscle targeting industrial scale.",
+      "source_urls": [
+        "https://digitaloneagency.com.au/best-vector-database-for-rag-in-2025-pinecone-vs-weaviate-vs-qdrant-vs-milvus-vs-chroma/",
+        "https://blog.elest.io/qdrant-vs-weaviate-vs-milvus-which-vector-database-for-your-rag-pipeline/"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://blog.elest.io/qdrant-vs-weaviate-vs-milvus-which-vector-database-for-your-rag-pipeline/",
+      "title": "Qdrant vs Weaviate vs Milvus: Which Vector Database for Your RAG Pipeline?",
+      "relevance_score": 0.98
+    },
+    {
+      "url": "https://tensorblue.com/blog/vector-database-comparison-pinecone-weaviate-qdrant-milvus-2025",
+      "title": "Best Vector Database 2025: Pinecone vs Weaviate vs Qdrant vs Milvus – Price & Performance",
+      "relevance_score": 0.95
+    },
+    {
+      "url": "https://www.firecrawl.dev/blog/best-vector-databases",
+      "title": "Best Vector Databases in 2025: A Complete Comparison",
+      "relevance_score": 0.92
+    },
+    {
+      "url": "https://digitaloneagency.com.au/best-vector-database-for-rag-in-2025-pinecone-vs-weaviate-vs-qdrant-vs-milvus-vs-chroma/",
+      "title": "Best Vector Database For RAG In 2025 (Pinecone Vs Weaviate Vs Qdrant Vs Milvus Vs Chroma)",
+      "relevance_score": 0.9
+    },
+    {
+      "url": "https://www.ai-infra-link.com/comparing-open-source-vector-databases-for-rag-pipelines-a-comprehensive-guide-for-2025/",
+      "title": "Comparing Open Source Vector Databases for RAG Pipelines – A Comprehensive Guide for 2025",
+      "relevance_score": 0.88
+    },
+    {
+      "url": "https://neurlcreators.substack.com/p/top-5-vector-databases-2025",
+      "title": "Top 5 Vector Databases for AI Builders in 2025",
+      "relevance_score": 0.85
+    },
+    {
+      "url": "https://redis.io/blog/best-open-source-vector-databases-comparison/",
+      "title": "Best Open Source Vector Databases 2026 & Comparison – Redis",
+      "relevance_score": 0.82
+    },
+    {
+      "url": "https://www.gigaspaces.com/blog/best-vector-database-solutions-for-rag-applications",
+      "title": "The 6 Best Vector Database Solutions for RAG Applications – GigaSpaces",
+      "relevance_score": 0.8
+    }
+  ],
+  "confidence": "high",
+  "limitations": [
+    "Performance benchmarks (latency/QPS figures) vary by dataset, hardware, and configuration — treat as directional, not absolute",
+    "Pricing figures reflect 2025 estimates and may change; always verify current managed cloud pricing on vendor sites",
+    "Milvus DiskANN index support sourced from broader documentation rather than a single benchmark snippet",
+    "Chroma is excluded despite being popular for prototyping, as it lacks production-grade maturity for scaling RAG products"
+  ],
+  "assumptions": [
+    "The startup wants a fully open-source (self-hostable) solution, not a proprietary managed-only service like Pinecone",
+    "The comparison focuses on production RAG use cases, not just local prototyping (which would favor Chroma)",
+    "The startup may start small but needs a clear path to scale"
+  ],
+  "next_steps": [
+    "Run your own benchmark with your actual embedding model and dataset size — synthetic benchmarks only tell part of the story",
+    "Prototype with Qdrant first if you need fast filtered search on a budget; switch evaluation to Weaviate if you want to skip managing an embedding service",
+    "Consider Milvus (or its managed Zilliz Cloud) only when you project >100M vectors or have a dedicated platform/data engineering team",
+    "Evaluate hybrid search quality (recall@k with metadata filters) on your specific document corpus before committing",
+    "Check LangChain/LlamaIndex integration docs for whichever DB you choose to confirm compatibility with your RAG framework version"
+  ],
+  "judge_verdict": {
+    "groundedness_score": 0.82,
+    "flagged_claims": [
+      "Milvus supports GPU acceleration and multiple index types including HNSW, IVF, DiskANN",
+      "Weaviate Cloud starts at ~$25/month, $150-300/month for 10M vectors",
+      "All three integrate with LangChain via dedicated integrations"
+    ],
+    "passed": true,
+    "reasoning": "Most claims are directly supported by the provided snippets, but a few details are either only partially supported or not explicitly evidenced, especially Milvus index specifics, the exact Weaviate Cloud pricing phrasing, and the blanket claim about dedicated LangChain integrations for all three."
+  }
+}
+
+====================================================
+TRACE  6a7b2de3-6181-4293-b239-192760b55072
+Calls  9
+Tokens 157361 in / 9507 out
+Cost   $0.588284
+Time   219989ms
+====================================================
+

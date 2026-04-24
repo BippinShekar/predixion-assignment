@@ -1,0 +1,20 @@
+{"iteration": 0, "total_input_tokens": 0, "event": "agent_iteration", "level": "info", "timestamp": "2026-04-24T13:34:54.540702Z"}
+{"trace_id": "6a7b2de3-6181-4293-b239-192760b55072", "step": "orchestrator_iter_0", "model": "claude-sonnet-4-6", "input_tokens": 3658, "output_tokens": 73, "latency_ms": 2142.2, "cost_usd": 0.012069, "event": "llm_call", "level": "info", "timestamp": "2026-04-24T13:34:56.683241Z"}
+{"trace_id": "6a7b2de3-6181-4293-b239-192760b55072", "step": "query_decomposer", "model": "claude-haiku-4-5-20251001", "input_tokens": 142, "output_tokens": 224, "latency_ms": 4674.1, "cost_usd": 0.001262, "event": "llm_call", "level": "info", "timestamp": "2026-04-24T13:35:01.360829Z"}
+{"query_type": "comparison", "num_sub_questions": 5, "event": "query_decomposer", "level": "info", "timestamp": "2026-04-24T13:35:01.361029Z"}
+{"iteration": 1, "total_input_tokens": 3658, "event": "agent_iteration", "level": "info", "timestamp": "2026-04-24T13:35:01.361957Z"}
+{"trace_id": "6a7b2de3-6181-4293-b239-192760b55072", "step": "orchestrator_iter_1", "model": "claude-sonnet-4-6", "input_tokens": 36742, "output_tokens": 1097, "latency_ms": 27130.8, "cost_usd": 0.126681, "event": "llm_call", "level": "info", "timestamp": "2026-04-24T13:35:28.492904Z"}
+{"trace_id": "6a7b2de3-6181-4293-b239-192760b55072", "step": "structured_compare", "model": "claude-haiku-4-5-20251001", "input_tokens": 1067, "output_tokens": 940, "latency_ms": 5654.0, "cost_usd": 0.005767, "event": "llm_call", "level": "info", "timestamp": "2026-04-24T13:35:34.150988Z"}
+{"items": ["Qdrant", "Weaviate", "Milvus"], "criteria_count": 7, "event": "structured_compare", "level": "info", "timestamp": "2026-04-24T13:35:34.151159Z"}
+{"iteration": 2, "total_input_tokens": 40400, "event": "agent_iteration", "level": "info", "timestamp": "2026-04-24T13:35:34.151267Z"}
+{"trace_id": "6a7b2de3-6181-4293-b239-192760b55072", "step": "orchestrator_iter_2", "model": "claude-sonnet-4-6", "input_tokens": 34702, "output_tokens": 2175, "latency_ms": 33716.1, "cost_usd": 0.136731, "event": "llm_call", "level": "info", "timestamp": "2026-04-24T13:36:07.867525Z"}
+{"trace_id": "6a7b2de3-6181-4293-b239-192760b55072", "step": "llm_judge", "model": "gpt-5.4-mini", "input_tokens": 1975, "output_tokens": 131, "latency_ms": 2891.5, "cost_usd": 0.002071, "event": "llm_call", "level": "info", "timestamp": "2026-04-24T13:36:10.765309Z"}
+{"groundedness_score": 0.78, "flagged_count": 4, "passed": true, "event": "llm_judge", "level": "info", "timestamp": "2026-04-24T13:36:10.765464Z"}
+{"iteration": 3, "event": "sending_nudge", "level": "info", "timestamp": "2026-04-24T13:36:10.765535Z"}
+{"iteration": 3, "total_input_tokens": 75102, "event": "agent_iteration", "level": "info", "timestamp": "2026-04-24T13:36:10.765561Z"}
+{"trace_id": "6a7b2de3-6181-4293-b239-192760b55072", "step": "orchestrator_iter_3", "model": "claude-sonnet-4-6", "input_tokens": 37131, "output_tokens": 2427, "latency_ms": 59087.0, "cost_usd": 0.147798, "event": "llm_call", "level": "info", "timestamp": "2026-04-24T13:37:09.852592Z"}
+{"trace_id": "6a7b2de3-6181-4293-b239-192760b55072", "step": "llm_judge", "model": "gpt-5.4-mini", "input_tokens": 2196, "output_tokens": 151, "latency_ms": 2773.1, "cost_usd": 0.002327, "event": "llm_call", "level": "info", "timestamp": "2026-04-24T13:37:12.628811Z"}
+{"groundedness_score": 0.82, "flagged_count": 3, "passed": true, "event": "llm_judge", "level": "info", "timestamp": "2026-04-24T13:37:12.629061Z"}
+{"iteration": 4, "total_input_tokens": 112233, "event": "agent_iteration", "level": "info", "timestamp": "2026-04-24T13:37:12.629219Z"}
+{"trace_id": "6a7b2de3-6181-4293-b239-192760b55072", "step": "orchestrator_iter_4", "model": "claude-sonnet-4-6", "input_tokens": 39748, "output_tokens": 2289, "latency_ms": 81920.1, "cost_usd": 0.153579, "event": "llm_call", "level": "info", "timestamp": "2026-04-24T13:38:34.549774Z"}
+{"iteration": 4, "event": "agent_submitted", "level": "info", "timestamp": "2026-04-24T13:38:34.549934Z"}
