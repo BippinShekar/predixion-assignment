@@ -1,3 +1,4 @@
+.env
 research-agent/.venv/
 research-agent/**/__pycache__/
 research-agent/**/*.pyc

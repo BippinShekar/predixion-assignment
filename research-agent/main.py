@@ -2,9 +2,9 @@ import argparse
 import os
 import sys
 
-from dotenv import load_dotenv
+from dotenv import find_dotenv, load_dotenv
 
-load_dotenv()
+load_dotenv(find_dotenv(raise_error_if_not_found=False))
 
 
 def _validate_env() -> None:
